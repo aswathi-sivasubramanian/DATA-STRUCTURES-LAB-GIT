@@ -1,0 +1,40 @@
+#include<stdio.h> 
+void print(int a[], int n) 
+ { 
+ int i; 
+ for(i = 0; i < n; i++) 
+ { 
+ printf("%d ",a[i]); 
+ } 
+ } 
+void bubble(int a[], int n) / 
+{ 
+ int i, j, temp; 
+ for(i = 0; i < n; i++) 
+ { 
+ for(j = i+1; j < n; j++) 
+ { 
+ if(a[j] < a[i]) 
+ { 
+ temp = a[i]; 
+ a[i] = a[j]; 
+ a[j] = temp; 
+ } 
+ } 
+ } 
+} 
+void main () 
+{ 
+ int i, j,temp; 
+ int a[5] = { 10, 35, 32, 13, 26}; 
+ int n = sizeof(a)/sizeof(a[0]); 
+ printf("Before sorting array elements are - \n"); 
+ print(a, n); 
+ bubble(a, n); 
+ printf("\nAfter sorting array elements are - \n"); 
+ print(a, n); 
+}
+// Before sorting array elements are - 
+// 12 31 25 8 32 17 
+// After sorting array elements are - 
+// 8 12 17 25 31 32 
