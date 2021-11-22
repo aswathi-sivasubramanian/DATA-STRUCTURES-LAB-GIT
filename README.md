@@ -1,3 +1,5 @@
+
+THIS README FILE CONSISTS OF PROGRAMS RELATED TO DATA STRUCTURES 
 1.singly linked list operations in c
 2.circularly linked list operations in c
 3.split digits and add each digit in each node.
